@@ -40,6 +40,18 @@ describe("Es Bisiesto", () => {
     it("El año 2016 debería considerarse como año bisiesto", () => {
         expect(esBisiesto(2016)).toEqual(true);
     });
+
+    it("El año 2017 no debería considerarse como año bisiesto", () => {
+        expect(esBisiesto(2017)).toEqual(false);
+    });
+
+    it("El año 2018 no debería considerarse como año bisiesto", () => {
+        expect(esBisiesto(2018)).toEqual(false);
+    });
+
+    it("El año 2019 no debería considerarse como año bisiesto", () => {
+        expect(esBisiesto(2019)).toEqual(false);
+    });
 });
 
   
